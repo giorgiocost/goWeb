@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  app:
+    container_name: app
+    image: golang:1.6.1-alpine
+    volumes:
+      - .:/go/src/goweb
+    working_dir: /go/src/goweb
+    command: ls
+    ports: 
+      - "3000:3000"
+
+      
+
+    
+
