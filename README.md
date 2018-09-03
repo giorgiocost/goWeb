@@ -9,14 +9,14 @@
 | [Processos do projeto](#Processos-do-projeto) |
 
 
-#### Intalação básica
+#### Instalação básica
 Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos
 
 #### Comandos cURL
 ##### Criando um usuário
 
 ```sh
-curl -d "nome=teste&email=teste@teste.com" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:3000/v1/usuarios
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded"  http://localhost:3000/v1/usuarios -d "nome=teste&email=teste@teste.com"
 ```
 
 #### Processos do projeto
