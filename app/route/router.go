@@ -15,7 +15,7 @@ func init() {
 	// A página inicial da aplicação
 	App.GET("/", c.Home)
 
-	api := App.Group("/")
-	api.POST("/", c.Inserir)
+	api := App.Group("/v1")
+	api.POST("/usuarios", c.Inserir)
 
 }
