@@ -16,7 +16,7 @@ Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica 
 ##### Criando um usuário
 
 ```sh
-curl -X -d POST "nome=teste&email=teste@teste.com" http://localhost:3000/v1/usuarios
+curl -d "nome=teste&email=teste@teste.com" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:3000/v1/usuarios
 ```
 
 #### Processos do projeto
